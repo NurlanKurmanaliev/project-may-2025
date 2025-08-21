@@ -58,4 +58,8 @@
     name: prometheus
     state: started
     enabled: yes
+  retries: 2
+  delay: 10
+  register: result
+  until: result is succeeded
     
